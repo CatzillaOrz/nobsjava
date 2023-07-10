@@ -1,4 +1,4 @@
-# Char Vs String
+# Char Vs String | Int Vs Long
 
 ## why Char not String?
 
@@ -9,3 +9,8 @@
 
 - Use *char* to store single characters.
 - Use *String* to store text.
+
+## when to use Long
+
+- < 2billion use Int
+- otherwise use Long
