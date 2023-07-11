@@ -5,6 +5,7 @@
 public class WhileLoops {
   public static void main(String[] args) {
     int number = 25;
+    // int guess = Math.random();
     while(number < 30){
       number++;
       System.out.println(number);
