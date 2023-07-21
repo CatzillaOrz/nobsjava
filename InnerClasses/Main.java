@@ -14,6 +14,8 @@ public class Main {
 
     greeting.Welcome();
 
+    MyFrame myFrame = new MyFrame();
+
 
   }
 
