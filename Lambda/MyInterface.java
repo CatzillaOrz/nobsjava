@@ -1,7 +1,7 @@
 @FunctionalInterface
 public interface MyInterface{
 
-  public void message();
+  public void message(String name,  char symbol);
 
 }
 
