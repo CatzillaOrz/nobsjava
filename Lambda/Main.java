@@ -1,5 +1,6 @@
 public class Main {
   public static void main(String[] args) {
+    /**
     String name = "Bro";
     char symbol = '!';
 
@@ -22,5 +23,8 @@ public class Main {
     myInterface.message(name, symbol);
     // @2
     myInterfaceOverride.message(name, symbol);
+    */
+    // #3
+    MyFrame myFrame = new MyFrame();
   }
 }
