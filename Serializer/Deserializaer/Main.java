@@ -12,7 +12,7 @@ public class Main {
       inputStr.close();
       fileIn.close();
 
-      System.out.println(user.name + "is Deserialized successfully!" + user.password);
+      System.out.println(user.name + "is Deserialized successfully!" + "Password Transient Can't Read it");
       
       
     }
