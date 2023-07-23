@@ -13,6 +13,9 @@ public class Main {
       fileIn.close();
 
       System.out.println(user.name + "is Deserialized successfully!" + "Password Transient Can't Read it");
+
+      long serialVersionUID = ObjectStreamClass.lookup(user.getClass()).getSerialVersionUID();
+      System.out.println(serialVersionUID);
       
       
     }
