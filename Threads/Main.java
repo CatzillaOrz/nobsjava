@@ -1,5 +1,6 @@
 public class Main {
   public static void main(String[] args) throws InterruptedException{
+    /**
     System.out.println(Thread.activeCount());
 
     Thread.currentThread().setName("MAIN");
@@ -14,6 +15,17 @@ public class Main {
       System.out.println(i);
       Thread.sleep(1000);
     }
+    */
 
+    MyThread thread2 = new MyThread();
+    thread2.start();
+    System.out.println(thread2.isAlive());
+
+    thread2.setName("2nd thread");
+    System.out.println(thread2.getName());
+    System.out.println(thread2.getPriority());
+    // Daemon()
+    // thread2.setDaemon(true);
+    System.out.println(thread2.isDaemon());
   }
 }
