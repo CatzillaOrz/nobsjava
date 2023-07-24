@@ -6,7 +6,7 @@ public class Main {
     Thread thread2 = new Thread(runnable1);
 
     thread1.start();
-    thread1.join();
+    thread1.join(3000);
     thread2.start();
   }
 }
