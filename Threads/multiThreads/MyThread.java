@@ -6,7 +6,7 @@ public class MyThread extends Thread{
           System.out.println(i);
           Thread.sleep(1000);
         }catch(InterruptedException e){
-          System.out.println("Thread #1: " +i);
+          e.printStackTrace();
         }
       }
       System.out.println("Thread #1 is finished! :) ");
