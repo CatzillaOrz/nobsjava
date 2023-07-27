@@ -3,6 +3,7 @@ public class Main {
   public static void main(String[] args) {
     LinkedList<String> linkedList = new LinkedList<String>();
 
+    // LinkedList as a Stack
     linkedList.push("A");
     linkedList.push("B");
     linkedList.push("C");
@@ -17,6 +18,8 @@ public class Main {
 
     linkedList.add(5, "G");
     linkedList.remove("G");
+    System.out.println(linkedList.peekFirst());
+    System.out.println(linkedList.peekLast());
     System.out.println(linkedList);
   }
 }
