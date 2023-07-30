@@ -1,17 +1,15 @@
-
-/**
- * Adjacency Matrix = A 2D array to store 1's/0's to represent edges
- * # of rows = # of unique nodes
- * # of columns = # of unique nodes
+/***
+ * Adjacency List = An array/arraylist of linkedlists
+ * Each linedList has a unique node at the head.
+ * All adjacent neighbours to that node are added to that node's linkedlist
  *
- * runtime complexity to check an Edge: O(1)
- * space complexity: O(v^2)
+ * runtime complexity to check an Edge: O(v)
+ * space complexity: O(v + e)
+ *
  */
-
 public class Main {
     public static void main(String[] args) {
-
-        Graph graph = new Graph(5);
+        Graph graph = new Graph();
 
         graph.addNode(new Node('A'));
         graph.addNode(new Node('B'));
@@ -21,13 +19,12 @@ public class Main {
 
         graph.addEdge(0, 1);
         graph.addEdge(1, 2);
+        graph.addEdge(1, 4);
         graph.addEdge(2, 3);
-        graph.addEdge(2, 4);
         graph.addEdge(4, 0);
         graph.addEdge(4, 2);
-        graph.print();
 
-        System.out.println(graph.checkEdge(0, 1));
+        graph.print();
     }
 
 }
